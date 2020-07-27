@@ -1,242 +1,147 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
-  <meta property='og:type' content='website' />
-  <meta property='og:site_name' content="あまみのポートフォリオ" />
-  <meta property='og:title' content='あまみのポートフォリオ' />
-  <meta property='og:url' content='https://amami0522.github.io/' />
-  <meta property='og:description' content='テンプレ盛り盛りのあまみのポートフォリオです' />
-  <meta property="og:image" content="imgprofile/全国高専大会_200108_0201.jpg" />
-  <meta name="description" content="テンプレ盛り盛りのあまみのポートフォリオです" />
-  <meta name="teitter:card" content="Summary" />
-  <title>あまみのポートフォリオ</title>
-  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
-  <link href="css/reset.css" media="all" rel="stylesheet" type="text/css" />
-  <link href="css/photoswipe/photoswipe.css" media="all" rel="stylesheet" type="text/css" />
-  <link href="css/photoswipe/default-skin/default-skin.css" media="all" rel="stylesheet" type="text/css" />
-  <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
-  <link rel="shortcut icon" href="img/favicon.ico" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <title>Portfolio</title>
+    <script src="./js/competitive_color.js"></script>
 </head>
-
 <body>
-  <div id="wrapper">
-    <header id="header">
-      <h1 class="logo">
-        <span class="logo-title"><center>AMAMI's</center></span></span><br>
-        <span class="logo-title"><center>PORTFOLIO</center></span></span>
-      </h1>
+    <!--
+    <header>
+        <div class="headerInner">
+            <h1 class="logo">Portfolio</h1>
+        </div>
     </header>
-    <nav id="gnav">
-      <ul>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#skill">CONTEST</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-      </ul>
-    </nav>
-    <main id="contents">
-      <section class="section" id="about">
-        <div class="inner">
-          <div class="section-title-block">
-            <h2 class="section-title">ABOUT</h2>
-            <p class="section-desc">
-              自己紹介
-            </p>
-          </div>
-          <div class="two-column-wrapper">
-            <div class="two-column-image">
-              <img src="img/profile/全国高専大会_200108_0201 (1)_0404065413.png" alt="">
-            </div>
-            <div class="two-column-desc">
-              <p class="text">
-                <center><strong>ニックネーム</strong></center>
-                <center>あまみ</center><br>
-                <center><strong>生年月日</strong></center>
-                <center>2001/07/18</center><br>
-                <center><strong>所属</strong></center>
-                <center>豊田工業高等専門学校 情報工学科</center><br>
-                <center><strong>AtCoder</strong></center>
-                <center><a href="https://atcoder.jp/users/mitsui321" target="_blank">mitsui321</a></center>
-              </p>
-            </div>
-          </div>
+    -->
+    <main>
+        <div class="mainInner">
+            <article>
+                <section>
+                    <p class="icon">
+                        <center><img src="./img/rugby.png"></center>
+                    </p>
+                    <h1>
+                        Amami<br>
+                        <span class="subtitle">Atsuki Mitsui</span>
+                    </h1>
+                </section>
+                <section>
+                    <h1>
+                        <i class="fas fa-user"></i>
+                        Introduction<br>
+                        <span class="subtitle">About me</span>
+                    </h1>
+                    <table class="content">
+                        <tr>
+                            <th>生年月日</th>
+                            <td>2001年7月18日</td>
+                        </tr>
+                        <tr>
+                            <th>所属</th>
+                            <td>豊田工業高等専門学校</td>
+                        </tr>
+                        <tr>
+                            <th>学科</th>
+                            <td>情報工学科</td>
+                        </tr>
+                    </table>
+                </section>
+                <section>
+                    <h1>
+                        <i class="fas fa-cog"></i>
+                        Competitive Programming<br>
+                        <span class="subtitle">for C++</span>
+                    </h1>
+                    <table class="content">
+                        <tr>
+                            <th>AtCoder</th>
+                            <td><a id="atcoder_rating" target="_blank" style="text-decoration:none;font-weight:bold;">loading</a></td>
+                        </tr>
+                        <tr>
+                            <th>Codeforces</th>
+                            <td><a id="codeforces_rating" target="_blank" style="text-decoration:none;font-weight:bold;">loading</a></td>
+                        </tr>
+                        <tr>
+                            <th>TopCoder SRM</th>
+                            <td><a id="topcoder_algorithm_rating" target="_blank" style="text-decoration:none;font-weight:bold;">loading</a></td>
+                        </tr>
+                        <tr>
+                            <th>AOJ</th>
+                            <td><a id="aoj" href="http://judge.u-aizu.ac.jp/onlinejudge/user.jsp?id=amami#1" target="_blank" style="text-decoration:none;font-weight:bold;color:black;">amami</a></td>
+                        </tr>
+                    </table>
+                </section>
+                <section>
+                    <h1>
+                        <i class="fas fa-book"></i>
+                        Contest<br>
+                        <span class="subtitle">What did I do</span>
+                    </h1>
+                    <table class="content">
+                        <tr>
+                            <th>myRIO組込み開発コンテスト2017</th>
+                        </tr>
+                        <tr>
+                            <th>情報オリンピック2017</th>
+                        </tr>
+                        <tr>
+                            <th>パソコン甲子園2018</th>
+                        </tr>
+                        <tr>
+                            <th>情報オリンピック2018</th>
+                        </tr>
+                        <tr>
+                            <th>パソコン甲子園2019</th>
+                        </tr>
+                        <tr>
+                            <th>全国高専プロコン第30回都城大会</th>
+                        </tr>
+                        <tr>
+                            <th>PG BATTLE 2019</th>
+                        </tr>
+                        <tr>
+                            <th>Google Code Jam 2020 Round1</th>
+                        </tr>
+                    </table>
+                </section>
+                <section>
+                    <h1>
+                        <i class="fas fa-portrait"></i>
+                        Others<br>
+                        <span class="subtitle">More about me</span>
+                    </h1>
+                    <div class="parent">
+                        <div class="child">
+                            <a href="https://twitter.com/amimami_0522" target="_brank">
+                                <img src="./img/Twitter_Social_Icon_Circle_Color.png">
+                            </a>
+                        </div>
+                        <div class="child">
+                            <a href="https://github.com/amami0522?tab=overview" target="_brank">
+                                <img src="./img/GitHub-Mark-120px-plus.png">
+                            </a>
+                        </div>
+                        <div class="child">
+                            <a href="https://t.co/YTEcOfIvt1" target="_brank">
+                                <img src="./img/hatenablog-logo.png">
+                            </a>
+                        </div>
+                        <div class="child">
+                            <a href="https://www.facebook.com/profile.php?id=100022663904491" target="_brank">
+                                <img src="./img/f_logo_RGB-Hex-Blue_512.png">
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </article>
         </div>
-      </section>
-      <section class="section" id="skill">
-        <div class="inner">
-          <div class="section-title-block">
-            <h2 class="section-title">CONTEST</h2>
-            <p>参加コンテスト</p>
-          </div>
-          <div class="card-wrapper">
-            <div class="card">
-              <div class="skill-icon">
-                <img src="img/skill/favicon.ico" alt="">
-              </div>
-              <div class="skill-desc">
-                <h3 class="skill-desc-title">myRIO組込み開発コンテスト2017</h3>
-                <p class="text"></p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="skill-icon">
-                <img src="img/skill/joi_0404074551.png" alt="">
-              </div>
-              <div class="skill-desc">
-                <h3 class="skill-desc-title">情報オリンピック2017</h3>
-                <p class="text"></p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="skill-icon">
-                <img src="img/skill/aizu25_logo_a.png" alt="">
-              </div>
-              <div class="skill-desc">
-                <h3 class="skill-desc-title">パソコン甲子園2018</h3>
-                <p class="text"></p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="skill-icon">
-                <img src="img/skill/joi_0404074551.png" alt="">
-              </div>
-              <div class="skill-desc">
-                <h3 class="skill-desc-title">情報オリンピック2018</h3>
-                <p class="text"></p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="skill-icon">
-                <img src="img/skill/appletouch.png" alt="">
-              </div>
-              <div class="skill-desc">
-                <h3 class="skill-desc-title">全国高専プログラミングコンテスト 第30回都城大会</h3>
-                <p class="text"></p>
-              </div>
-            </div>
-            <div class="card">
-                <div class="skill-icon">
-                  <img src="img/skill/aizu25_logo_a.png" alt="">
-                </div>
-                <div class="skill-desc">
-                  <h3 class="skill-desc-title">パソコン甲子園2019</h3>
-                  <p class="text"></p>
-                </div>
-              </div>
-          </div>
-        </div>
-      </section>
-      <section class="section" id="contact">
-        <div class="inner">
-          <div class="section-title-block">
-            <h2 class="section-title">CONTACT</h2>
-            <p class="section-desc">
-              その他SNS
-            </p>
-          </div>
-          <div class="contact-wrapper">
-            <div class="contact-list">
-              <ul>
-                <li><a href="https://github.com/amami0522" target="_blank"><img src="img/contact/GitHub-Mark-120px-plus.png" alt=""><span
-                      class="contact-list-desc">GutHub</span></a></li>
-                <li><a href="https://twitter.com/amimami_0522" target="_blank"><img src="img/contact/Twitter_Logo_Blue.png" alt=""><span
-                      class="contact-list-desc">Twitter</span></a></li>
-                <li><a href="https://www.facebook.com/profile.php?id=100022663904491&ref=bookmarks" target="_blank"><img src="img/contact/f_logo_RGB-Hex-Blue_512.png" alt=""><span
-                      class="contact-list-desc">Facebook</span></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
     </main>
-    <footer id="footer">
-      <div class="inner">
-        <nav class="footer-link">
-          <ul>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#skill">CONTEST</a></li>
-            <li><a href="#contact">CONTACT</a></li>
-          </ul>
-        </nav>
-        <p class="copyright">Copyright&copy;Hanako Yamada. All Rights Reserved.</p>
-      </div>
+    <footer class="footerInner">
+        <small>Copyright &copy 2020 Amami</small>
     </footer>
-  </div>
-
-
-  <!-- Root element of PhotoSwipe. Must have class pswp. -->
-  <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
-    <!-- Background of PhotoSwipe.
-           It's a separate element as animating opacity is faster than rgba(). -->
-    <div class="pswp__bg"></div>
-
-    <!-- Slides wrapper with overflow:hidden. -->
-    <div class="pswp__scroll-wrap">
-
-      <!-- Container that holds slides.
-              PhotoSwipe keeps only 3 of them in the DOM to save memory.
-              Don't modify these 3 pswp__item elements, data is added later on. -->
-      <div class="pswp__container">
-        <div class="pswp__item"></div>
-        <div class="pswp__item"></div>
-        <div class="pswp__item"></div>
-      </div>
-
-      <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-      <div class="pswp__ui pswp__ui--hidden">
-
-        <div class="pswp__top-bar">
-
-          <!--  Controls are self-explanatory. Order can be changed. -->
-
-          <div class="pswp__counter"></div>
-
-          <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-
-
-
-          <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
-          <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-          <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-          <!-- element will get class pswp__preloader--active when preloader is running -->
-          <div class="pswp__preloader">
-            <div class="pswp__preloader__icn">
-              <div class="pswp__preloader__cut">
-                <div class="pswp__preloader__donut"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-          <div class="pswp__share-tooltip"></div>
-        </div>
-
-        <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-        </button>
-
-        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-        </button>
-
-        <div class="pswp__caption">
-          <div class="pswp__caption__center"></div>
-        </div>
-
-      </div>
-
-    </div>
-
-
-  </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script type='text/javascript' src="js/photoswipe/photoswipe.min.js"></script>
-  <script type='text/javascript' src="js/photoswipe/photoswipe-ui-default.js"></script>
-  <script type='text/javascript' src="js/photoswipe/photoswipe_setup.js"></script>
-  <script type='text/javascript' src="js/script.js"></script>
 </body>
 </html>
