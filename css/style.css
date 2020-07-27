@@ -51,7 +51,8 @@ main section{
 }
 
 .child{
-    width: 150px;
+    width: 50%;
+    text-align: center;
     margin: 10px;
     padding: 10px;
 }
@@ -63,12 +64,14 @@ main section{
 @media screen and (max-width: 800px){
     .parent{
         flex-wrap: wrap;
+        text-align: center;
     }
 }
 
 @media screen and (max-width: 400px){
     .parent{
         display: block;
+        text-align: center;
     }
 }
 
