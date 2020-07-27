@@ -43,27 +43,6 @@ main section{
 .mainInner .content th, td{
     width: 50%;
 }
-
-.mainInner .tbl-r06{
-    width: 100%;
-    border-spacing:  0px 40px;
-}
-
-.mainInner .tbl-r06 img{
-    width: 48px;
-}
-
-@media screen and (max-width: 640px){
-    .tbl-r06{
-        width: 80%;
-    }
-    .tbl-r06 .thead{
-        display: none;
-    }
-    .tbl-r06 th{
-        display: inline block;
-    }
-}
 /*ここまでテーブル*/
 
 .parent{
