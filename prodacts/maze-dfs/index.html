@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>幅優先探索</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="m-3">
+        <blockquote class="blockquote">
+            <h1>迷路生成 幅優先探索</h1>
+            <footer class="blockquote-footer">迷路を自動生成して幅優先探索します</footer>
+        </blockquote>
+        <div class="item">
+            <div class="form-group">
+                <form name="gridSize" class="form-inline">
+                    <label for="gridHeight">高さ</label>
+                    <select class="custom-select" name="inputHeight">
+                        <option>15</option>
+                        <option>25</option>
+                        <option>35</option>
+                        <option>45</option>
+                        <option>55</option>
+                    </select>
+                    <label for="gridWidth">幅</label>
+                    <select class="custom-select" name="inputWidth">
+                        <option>15</option>
+                        <option>25</option>
+                        <option>35</option>
+                        <option>45</option>
+                        <option>55</option>
+                        <option>65</option>
+                        <option>75</option>
+                    </select>
+                </form>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary" onclick="showGrid()">VISUALIZE!!!</button>
+            </div>
+        </div>
+        <div class="item">
+            <div id="content"></div>
+        </div>
+    </div>
+    <script src="./ABC007C.js"></script>
+</body>
+</html>

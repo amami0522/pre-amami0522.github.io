@@ -1,0 +1,54 @@
+.td-small {
+    width: 30px;
+    height: 30px;
+    font-size: large;
+}
+
+.td-middle {
+    width: 25px;
+    height: 27px;
+    font-size: medium;
+}
+
+.td-large {
+    width: 25px;
+    height: 27px;
+    font-size: xx-small;
+}
+
+td {
+    text-align: center;
+    border: solid 1px;
+}
+
+.black {
+    background-color: grey;
+}
+
+.white {
+    background-color: white;
+}
+
+.red {
+    background-color: red;
+    border-color: black;
+    color: white;
+}
+
+.blue {
+    background-color: blue;
+    border-color: black;
+    color: white;
+}
+
+.orenge {
+    background-color: orange;
+}
+
+.lightgreen {
+    background-color: lightgreen;
+}
+
+.item {
+    margin: 5px;
+}

@@ -84,3 +84,71 @@ h1 .subtitle{
     font-weight: normal;
     color: #696969;
 }
+
+.container {
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+}
+
+.card{
+    width: 288px;
+    height: auto;
+}
+
+.card-skin {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,.4);
+}
+
+.card-skin .card__textbox {
+    color: #696969;
+}
+
+.card__imgframe_maze{
+    width: 100%;
+    height: auto;
+    padding-top: 56.25%;
+    background: url(../img/Maze-DFS-15x15.png) no-repeat center;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.card__imgframe_news{
+    width: 100%;
+    height: auto;
+    padding-top: 56.25%;
+    background: url(../img/News-Gacha-Simulator.png) no-repeat center;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.card__textbox{
+    width: 100%;
+    height: auto;
+    padding: 20px 18px;
+    background: #ffffff;
+    box-sizing: border-box;
+}
+
+.card__textbox > * + *{
+    margin-top: 10px;
+}
+
+.card__titletext{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 125%;
+}
+
+.container a {
+    text-decoration: none;
+}
+
+.card__overviewtext{
+    font-size: 12px;
+    line-height: 150%;
+}
